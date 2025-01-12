@@ -373,5 +373,5 @@ app.get("/AllForums/", (req, res) => {
 });
 
 app.listen(app.get('port'), () => {
-	console.log(app.get('port'), app.get('host'));
+	console.log("MindGami Running!");
 });

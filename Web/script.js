@@ -536,6 +536,7 @@ function main() {
 		})
 			.then((response) => response.json())
 			.then((val) => {
+				console.log(val)
 				if (!val || !val.success) throw new Error(val.error);
 
 				const img = document.createElement("img");
