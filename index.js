@@ -18,10 +18,6 @@ const token = 3673669129;
 
 // Send Images
 app.get("/design-img/:idx/:token", (req, res) => {
-	if (req.params.token != token) {
-		return res.send(invalidUrl(req));
-	}
-
 	const uid = req.params.idx;
 	res.sendFile(path.join(__dirname, `/Designs/${uid}/Image.png`));
 });
