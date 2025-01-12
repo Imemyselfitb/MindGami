@@ -4,11 +4,7 @@ const path = require("path");
 const bodyParser = require("body-parser");
 const app = express();
 
-const PORT = '3000';
-const host_root_path = `192.168.4.42`;
-
-app.set('port', PORT);
-app.set('host', host_root_path);
+app.set('port', process.env.PORT || 3000);
 
 app.use(express.static("Web"));
 
@@ -376,6 +372,6 @@ app.get("/AllForums/", (req, res) => {
 	}
 });
 
-app.listen(app.get('port'), app.get('host'), () => {
+app.listen(app.get('port'), () => {
 	console.log(app.get('port'), app.get('host'));
 });
