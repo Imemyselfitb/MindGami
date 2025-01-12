@@ -1,0 +1,372 @@
+html, body {
+	min-width: 530px;
+	overflow-x: hidden;
+	background-image: url('Assets/Wrinkled.webp');
+	/*background-repeat: no-repeat;*/
+	background-size: 100%;
+	background-color: #34343b;
+	/*background-color: #fbeecf; */
+	font-family: "verdana";
+}
+
+.MenuBar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background: linear-gradient(to right, #2d1126, #4d1b31, #4f1624, #481b14, #4a4a44, #36544e);
+	width: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	margin-bottom: 50px;
+
+	border-bottom: 6px solid white;
+	border-image: linear-gradient(to right, #2f27c3, #f1147d, #ddc008, #bdcdd3, #75c9ec);
+	border-image-slice: 1;
+}
+
+.MenuItem {
+	float: left;
+	font-weight: bold;
+}
+
+.MenuItem > a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: "verdana";
+
+	display: flex;
+	align-items: center;
+}
+
+.MenuItem > a > img {
+	filter: invert(100%);
+	padding-right: 10px;
+}
+
+#MI_A, #MI_D, #MI_F {
+	border-left: 1px solid #bbb;
+}
+
+#MI_H, #MI_F {
+	border-right: 1px solid #bbb;
+}
+
+#MI_A {
+	float: right;
+}
+
+.SearchBar {
+	float: right;
+}
+
+.SearchBar div {
+	float: right;
+	border-radius: 12px;
+	border: 2px solid #999999;
+	background-color: #F0F0F0;
+	
+	margin-top: 5px;
+	margin-right: 5px;
+	width: 300px;
+}
+
+.SearchIcon {
+	position: relative;
+	left: -10px;
+	top: 5px;
+	float: right;
+	width: 20px;
+}
+
+.SearchArea {
+	border: none;
+	border-radius: 12px;
+	background-color: #00000000;
+	color: #666666;
+	font-family: "verdana";
+	font-size: 16px;
+	padding: 8px;
+	width: 250px;
+}
+
+.SearchArea::placeholder {
+	color: #b8b8b8;
+	font-style: italic;
+}
+
+.MenuTitle {
+	padding-right: 10px;
+	border: none;
+	color: white;
+	font-size: 34px;
+	margin-left: 10px;
+	font-family: "Verdana";
+	padding-top: 5px;
+}
+
+.curpage {
+	background-color: #000000AA;
+	/* pointer-events: none; */
+}
+
+.MenuItem a:hover {
+	background-color: #44444455;
+}
+
+.curpage a:hover {
+	background-color: #FFFFFF0F;
+}
+
+#OmniContainer {
+	margin-top: 65px;
+}
+
+.design {
+	margin: auto;
+	padding-left: 5px;
+	border-radius: 20px;
+	display: flex;
+	max-width: 90%;
+	align-items: center;
+}
+
+.design {
+	background-color: #330033;
+	border: 5px solid #220022;
+}
+
+.design.vehicles {
+	background-color: #2a2936;
+	border: 5px solid #1e1e23;
+}
+
+.design.structures {
+	background-color: #362a29;
+	border: 5px solid #231e1e;
+}
+
+.design.creatures {
+	background-color: #29362a;
+	border: 5px solid #1e231e;
+}
+
+.design > img {
+	max-width:  25%;
+	max-height: 25%;
+	min-width:  90px;
+	min-height: 90px;
+
+	border-radius: 20px;
+
+	float: left;
+	aspect-ratio: auto;
+	margin: 10px;
+	margin-left: 7px;
+	margin-right: 20px;
+}
+
+.designText {
+	width: 100%;
+	padding-right: 25px;
+	text-align: right;
+	color: #dcdcdc;
+	font-family: "verdana";
+}
+
+.designInfo {
+	color: #9696b1;
+}
+
+.designInfo, .designTitle {
+	text-align: left;
+}
+
+.designPDFs {
+	border-radius: 8px;
+	background-color: #5A5963;
+	padding: 5px;
+	overflow: hidden;
+	float: right;
+	display: flex;
+}
+
+.designPDFs > img {
+	filter: invert(100%);
+}
+
+#InstICO {
+	padding-left: 20px;
+}
+
+.designPDFs > img {
+	padding-right: 5px;
+}
+
+#MG_VID {
+	color: white;
+}
+
+#MG_VID > video {
+	border-radius: 20px;
+	max-width: 90vw;
+	max-height: 80vh;
+	min-width: 60vw;
+	min-height: 80vh;
+}
+
+#signups-container {
+	display: block;
+	border-radius: 8px;
+	padding: 5px;
+	border: 3px solid #221111;
+	background-color: #664455;
+
+	background-image: url('Assets/Wrinkled.webp');
+	background-blend-mode: multiply;
+	background-size: 100%;
+	font-size: 14px;
+	color: white;
+}
+
+#SignUpForm > h1 {
+	margin-block-start: 0;
+}
+
+button, input[type=submit] {
+	background-color: #e6e6e6;
+	border: 2px solid #999999;
+	border-radius: 8px;
+	padding: 5px;
+}
+
+#SignUpForm > input[type=submit] {
+	position: relative;
+	top: 5px;
+	margin-bottom: 5px;
+}
+
+#CreateThread {
+	border-radius: 8px;
+	padding: 5px;
+	border: 2px solid #221111;
+	background-color: #fed48b99;
+	background-image: url('Assets/Wrinkled.webp');
+	background-blend-mode: multiply;
+	font-size: 20px;
+}
+
+#CreateThread > img {
+	vertical-align: -5px;
+}
+
+#Description, #Title {
+	overflow-y: hidden;
+	resize: none;
+	width: 90vw;
+	margin-top: 10px;
+
+	border-radius: 15px;
+	padding: 5px;
+	border: 2px solid #999999;
+}
+
+#thread {
+	border-radius: 8px;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	padding: 5px;
+	border: 8px solid transparent;
+	border-image: linear-gradient(to bottom right, #5b5a5f, #DbCeBb);
+	border-image-slice: 1;
+	/*background: ; /*#cccccc;*/
+	background-image: url('Assets/Wrinkled.webp'), linear-gradient(to bottom right, #555555, #bbae9b);
+	background-blend-mode: overlay;
+}
+
+#DeleteThread, #DeleteReply {
+	position: relative;
+	left: 3px;
+	top: 17px;
+	background-color: #999999BB;
+}
+
+#thread:hover {
+	background-image: url('Assets/Wrinkled.webp'), linear-gradient(to top left, #555555, #bbae9b);
+	border-image: linear-gradient(to top left, #5b5a5f, #DbCeBb);
+	border-image-slice: 1;
+}
+
+#mainBody {
+	border-radius: 8px;
+	margin: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 2px solid #999999;
+
+	background-color: #EDEDED;
+	background-image: url('Assets/Wrinkled.webp');
+	background-blend-mode: multiply;
+}
+
+#mainBody > p, #mainBody > h1 {
+	overflow-wrap: break-word;
+}
+
+/**/
+#replyBox {
+	padding: 15px;
+	border-radius: 8px;
+	border: 4px solid #999999;
+	margin: 15px;
+
+	background-color: #664455;
+	background-image: url('Assets/Wrinkled.webp');
+	background-blend-mode: multiply;
+
+	border: 3px solid #221111;
+	color: white;
+}
+
+#replyInput {
+	margin-left: 5px;
+	margin-right: 5px;
+	width: calc(85% - 35px);
+	border-radius: 3px;
+	resize: none;
+}
+/**/
+
+#description, #title {
+	overflow-wrap: break-word;
+}
+
+#ReplyBtn {
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 20px;
+	color: black;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: #EFEFEF;
+	border: 3px solid #CCCCCC;
+}
+
+#replies_container > #reply {
+	border-radius: 8px;
+	padding: 5px;
+	border: 2px solid #40986f;
+	margin-left: 15px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	background-color: #a0e8bf;
+	background-image: url('Assets/Wrinkled.webp');
+	background-blend-mode: multiply;
+}
+

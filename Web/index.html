@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Mindgami</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="icon" type="image/x-icon" href="/Assets/logo.png">
+	</head>
+	<body>
+		<div id="Icons">
+
+		</div>
+		
+		<ul class="MenuBar">
+			<li class="MenuItem" id="MI_H">
+				<a href="#">
+					<img src="Assets/Icons/Home.svg" />
+					<span>Home</span>
+				</a>
+			</li>
+
+			<li class="MenuItem MenuTitle">MINDGAMI</li>
+
+			<li class="MenuItem" id="MI_D">
+				<a href="#designs">
+					<img src="Assets/Icons/Designs.svg" />
+					<span>Designs</span>
+				</a>
+			</li>
+
+			<li class="MenuItem" id="MI_F">
+				<a href="#forums">
+					<img src="Assets/Icons/Forum.svg" />
+					<span>Forums</span>
+				</a>
+			</li>
+
+			<li class="MenuItem" id="MI_A">
+				<a href="#about">About Us</a>
+			</li>
+
+			<li class="SearchBar">
+				<div>
+					<input class="SearchArea"
+						   id="SearchBar"
+						   placeholder="Search Designs" />
+					<img src="https://cdn.iconscout.com/icon/free/png-256/free-search-1362-458373.png"
+						 class="SearchIcon"
+						 onclick="searchDesigns();" />
+				</div>
+			</li>
+		</ul>
+		<div id="OmniContainer">
+			<div id="AboutUs" >
+				<style>
+					abt {color: white; font-size: 20px}
+					email {color: springgreen; font-size: 20px; font-style: oblique}
+					darkital {color: darkgray; font-style: italic}
+                    smaller {font-size: 10px}
+				</style>
+				<abt>
+					Contact us at <email>teammindgami@gmail.com</email> for the following:<br><darkital>- Reporting forum messages<br>- Problems, related to the website, that asking on the forum has not been able to solve<br>- Resetting forum account password<br>- Reporting a specific forum username/account<br></darkital>
+					<br><br>We believe that MindGami could be a way for people to be able to push their negative thoughts and worries onto arts and crafts. MindGami models take up to 5-10 minutes to fold, we want these projects to be able to happen at school, and at home - so students do not feel pressured to complete it in a limited time and can do it on their own. At school, however, we want to provide support to people folding and show them how to do things. Along the way, we want to let people feel comfortable to share their worries and challenging times in an environment with people like them brought together by MindGami.
+				</abt>
+
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
