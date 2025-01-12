@@ -1,5 +1,5 @@
 # MindGami
-## Shaping Minds, One Fold At a Time 
+_Shaping Minds, One Fold At a Time_
 
 ## About Us
 We believe that MindGami could be a way for people to be able to push their negative thoughts and worries onto arts and crafts. 
