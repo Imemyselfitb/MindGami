@@ -44,7 +44,7 @@ app.get("/design-html/:idx/:token", async (req, res) => {
 		const category = uid.substring(1, uid.indexOf("]")).toLowerCase();
 		res.send(`
 	<div class="design ${category}">
-		<img src="/design-img/${uid}/${token}">
+		<img src="/design-img/${uid}">
 		<div class="designText">
 			<div class="designPDFs">
 				<img onclick=" window.location.href='design-print/${uid}'; " src="Assets/Icons/Print.svg" width="40px" id="PrintICO">
