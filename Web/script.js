@@ -832,7 +832,7 @@ function main() {
 
 		for (let uid of designs) {
 			const des_response = await fetch(
-				`design-html/${uid}/${token}`,
+				`design-html/${uid}`,
 			);
 			ele.innerHTML += await des_response.text();
 		}

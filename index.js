@@ -17,7 +17,7 @@ const invalidUrl = (req) => `
 const token = 3673669129;
 
 // Send Images
-app.get("/design-img/:idx/:token", (req, res) => {
+app.get("/design-img/:idx", (req, res) => {
 	const uid = req.params.idx;
 	res.sendFile(path.join(__dirname, `/Designs/${uid}/Image.png`));
 });
